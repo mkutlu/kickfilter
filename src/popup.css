@@ -1,0 +1,91 @@
+:root{
+  --bg: #0F1113;         /* dark charcoal */
+  --panel: #15181B;      /* slightly lighter panel */
+  --text: #EAEAEA;       /* near-white text */
+  --muted: #A8B0B4;      /* muted gray */
+  --green: #53FC18;      /* Kick neon green */
+  --green-weak: #2C9911; /* darker green for borders/shadows */
+  --border: #262A2F;
+  --focus: #1BE95D;
+}
+
+* { box-sizing: border-box; }
+
+html, body { margin:0; padding:0; }
+body {
+  width: 360px;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  padding: 10px;
+}
+
+.hdr {
+  display: flex; align-items: center; gap: 10px;
+  margin-bottom: 10px;
+}
+.logo { width: 20px; height: 20px; border-radius: 4px; }
+.ttl { font-size: 14px; font-weight: 600; letter-spacing: .2px; }
+.pill { margin-left: auto; background: rgba(83,252,24,.12); color: var(--green);
+  padding: 2px 8px; border-radius: 999px; font-size: 11px; }
+
+.grp {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.2), 0 6px 14px rgba(0,0,0,.25);
+}
+
+.lbl { font-size: 12px; color: var(--muted); display:block; margin-bottom:6px; }
+
+textarea {
+  width: 100%; height: 150px;
+  background: #0E1012; color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px;
+  resize: vertical;
+  outline: none;
+}
+textarea:focus {
+  border-color: var(--focus);
+  box-shadow: 0 0 0 2px rgba(27,233,93,.25);
+}
+
+.row { display:flex; align-items:center; gap:8px; margin-top:8px; }
+
+button {
+  background: var(--green);
+  color: #0b0b0b;
+  border: 0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform .06s ease, box-shadow .12s ease;
+}
+button:hover { box-shadow: 0 0 0 3px rgba(83,252,24,.25); }
+button:active { transform: translateY(1px) scale(.99); }
+
+button.ghost {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+button.ghost:hover {
+  border-color: var(--focus);
+  box-shadow: 0 0 0 2px rgba(27,233,93,.12);
+}
+
+.status { margin-left:auto; font-size: 11px; color: var(--muted); }
+
+.chk { display:flex; align-items:center; gap:8px; font-size: 12px; }
+.chk input { accent-color: var(--green); }
+
+.hint { margin-top:6px; font-size:11px; color: var(--muted); }
+
+.ftr { display:flex; justify-content:flex-end; font-size: 11px; color: var(--muted); }
+.muted { color: var(--muted); }

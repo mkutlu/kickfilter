@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kick Channel Filter</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header class="hdr">
+      <img src="icons/icon32.png" alt="icon" class="logo">
+      <div class="ttl">Kick Channel Filter</div>
+      <span class="pill" id="count">0</span>
+    </header>
+
+    <section class="grp">
+      <label class="lbl">Blocked channels</label>
+      <textarea id="list" placeholder="username1&#10;username2"></textarea>
+      <div class="row">
+        <button id="save">Save</button>
+        <button class="ghost" id="refresh">Refresh</button>
+        <span class="status" id="status"></span>
+      </div>
+      <div class="hint">Use the username from URL (<code>kick.com/<b>name</b></code>). Auto-block hides spam without adding to this list.</div>
+    </section>
+
+    <section class="grp">
+      <div class="row">
+        <label class="chk"><input type="checkbox" id="autoBlock"><span>Auto-block random-looking names</span></label>
+        <button class="ghost" id="addCurrent">Add current</button>
+      </div>
+    </section>
+
+    <footer class="ftr">
+      <span class="muted">v1.4.0</span>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
