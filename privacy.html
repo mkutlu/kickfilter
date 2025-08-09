@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Kick Channel Filter — Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; color: #111; }
+    h1 { font-size: 22px; }
+    h2 { font-size: 18px; }
+    code { background: #f2f2f2; padding: 2px 4px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p><strong>Kick Channel Filter</strong> is a client-side browser extension for Google Chrome.</p>
+  <h2>Data Collection</h2>
+  <p>This extension does <strong>not</strong> collect, transmit, or sell any personal or usage data.</p>
+  <h2>Local Storage</h2>
+  <p>Settings (e.g., your blocked channel list and toggle preferences) are stored using Chrome's <code>chrome.storage</code>
+     APIs (<code>storage.sync</code> or <code>storage.local</code>) on your device or synced across your Chrome profile.</p>
+  <h2>Network Requests</h2>
+  <p>The extension does not send data to external servers. It runs only on <code>https://kick.com/*</code> pages to hide
+     specified channels and detect spam-like names.</p>
+  <h2>Permissions</h2>
+  <ul>
+    <li><code>storage</code> — to store your settings.</li>
+    <li><code>tabs</code> — used only to read the current tab URL when clicking “Add current”.</li>
+    <li><code>host_permissions: https://kick.com/*</code> — to operate on Kick.com pages.</li>
+  </ul>
+  <h2>Contact</h2>
+  <p>If you have questions or issues, please use the Support contact from the Chrome Web Store listing.</p>
+</body>
+</html>
